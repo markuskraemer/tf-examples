@@ -1,0 +1,9 @@
+
+<div #drawarea></div>
+<digit-prediction (click)="predict()"
+    *ngFor="let pic of pictures; let i = index"
+  [pictureTensor]="pic"
+  [labelTensor]="labels[i]"
+  [predictionTensor]="predictions[i]"
+></digit-prediction>
+<draw-image></draw-image>

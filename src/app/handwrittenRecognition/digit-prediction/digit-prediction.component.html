@@ -1,0 +1,7 @@
+<canvas #canvas width="28px" height="28px" style="margin:4px" ></canvas>
+<div>{{label}}</div>
+
+<div *ngFor="let prediction of predictions" class="prediction">
+    {{prediction}}
+    <div class="bar" [style.width]="(100*prediction)+'%'"></div>
+</div>

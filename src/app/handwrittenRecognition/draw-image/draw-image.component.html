@@ -1,0 +1,9 @@
+<canvas #canvas 
+    [width]="canvasWidth" 
+    [height]="canvasHeight"
+    (mousedown)="handleMouseDown($event)"
+    (mousemove)="handleMouseMove($event)"
+    (mouseup)="handleMouseUp($event)"
+    style="background-color: red"
+    ></canvas>
+

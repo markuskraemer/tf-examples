@@ -1,0 +1,10 @@
+
+
+<input type="button" (click)="updateLabels()" value="update Labels">
+<div class="labels-container">
+    <color-label *ngFor="let color of colors; let i = index" #colorLabels
+        [color]="color"
+        (click)="updateColor(i)">
+    </color-label>
+</div>
+
